@@ -1,7 +1,7 @@
 import { createStackNavigator } from "react-navigation";
 
 import Tabs from "./pages/Tabs";
-import Login from "./pages/LoginScreen";
+import Login from "./pages/Autenticacao/Login";
 import Acount from "./pages/AcountScreen";
 import ViewDelivery from "./pages/ViewDelivery";
 import ViewDeliveryman from "./pages/ViewDeliveryman";
@@ -29,7 +29,7 @@ const Routes = createStackNavigator(
     }
   },
   {
-    initialRouteName: "Tabs",
+    initialRouteName: "Login",
     navigationOptions: {
       headerStyle: {
         backgroundColor: "#0D3782"
