@@ -6,6 +6,7 @@ class Input extends Component {
   render() {
     return (
       <TextInput
+        {...this.props}
         secureTextEntry={this.props.type == "password"}
         style={styles.input}
         placeholder={this.props.placeholder}

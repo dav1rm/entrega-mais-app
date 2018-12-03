@@ -12,6 +12,16 @@ const styles = StyleSheet.create({
   fieldLogo: {
     alignItems: "center",
     paddingVertical: 15
+  },
+  input: {
+    backgroundColor: "#FAFAFA",
+    height: 50,
+    paddingHorizontal: 20,
+    marginVertical: 5,
+    color: "#231F20",
+    borderColor: "#DBDBDB",
+    borderWidth: 1,
+    borderRadius: 2
   }
 });
 export default styles;

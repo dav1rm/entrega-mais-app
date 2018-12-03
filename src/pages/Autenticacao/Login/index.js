@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 
 import { Text, View, Image, TextInput, TouchableOpacity } from "react-native";
-import { Container, Content, Item } from "native-base";
+import { Container } from "native-base";
 
 import Button from "../../../componentes/Button";
-import Input from "../../../componentes/Input";
 import styles from "./style";
 
 export default class Login extends Component {
@@ -18,8 +17,22 @@ export default class Login extends Component {
           />
           <Text style={styles.textLogo}>Entrega+</Text>
         </View>
-        <Input placeholder="Email" />
-        <Input type="password" placeholder="Senha" />
+        <TextInput
+          style={styles.input}
+          keyboardType="email-address"
+          autoCapitalize="none"
+          returnKeyType="next"
+          placeholder="Email"
+          onSubmitEditing={() => this.passwordInput.focus()}
+        />
+        <TextInput
+          style={styles.input}
+          secureTextEntry={true}
+          autoCapitalize="none"
+          returnKeyType="done"
+          placeholder="Senha"
+          ref={input => (this.passwordInput = input)}
+        />
         <Button title="ENTRAR" />
         <Button
           onPress={() => this.props.navigation.navigate("Register")}
