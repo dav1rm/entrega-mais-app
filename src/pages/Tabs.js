@@ -47,7 +47,7 @@ const Tabs = createBottomTabNavigator(
     }
   },
   {
-    initialRouteName: "Entregas",
+    initialRouteName: "Home",
     tabBarOptions: {
       showLabel: false,
       activeBackgroundColor: "#0D295B",

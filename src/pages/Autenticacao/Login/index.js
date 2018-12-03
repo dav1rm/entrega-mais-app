@@ -4,7 +4,7 @@ import { Text, View, Image, TextInput, TouchableOpacity } from "react-native";
 import { Container } from "native-base";
 
 import Button from "../../../componentes/Button";
-import styles from "./style";
+import styles from "./styles";
 
 export default class Login extends Component {
   render() {

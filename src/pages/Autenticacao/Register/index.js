@@ -5,7 +5,7 @@ import { Text, TextInput } from "react-native";
 import { Container, Content, Card, CardItem } from "native-base";
 
 import Button from "../../../componentes/Button";
-import styles from "./style";
+import styles from "./styles";
 
 export default class Register extends Component {
   static navigationOptions = {

@@ -12,15 +12,27 @@ import {
   Right,
   Thumbnail,
   Badge,
-  Text
+  Text,
+  Button
 } from "native-base";
 
 import styles from "./styles";
 
 export default class EntregasDisponiveis extends Component {
-  static navigationOptions = {
-    title: "Entregas Disponíveis"
-  };
+  static navigationOptions = ({ navigation }) => ({
+    title: "Entregas Disponíveis",
+    headerRight: (
+      <Right>
+        <Button transparent>
+          <Icon
+            name="add"
+            style={{ color: "#fff" }}
+            onPress={() => navigation.navigate("SolicitarEntrega")}
+          />
+        </Button>
+      </Right>
+    )
+  });
   state = {
     entregas: [
       {

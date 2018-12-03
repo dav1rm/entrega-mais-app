@@ -19,7 +19,7 @@ import styles from "./styles";
 
 export default class MinhasEntregas extends Component {
   static navigationOptions = {
-    title: "MInhas Entregas"
+    title: "Minhas Entregas"
   };
   state = {
     entregas: [
