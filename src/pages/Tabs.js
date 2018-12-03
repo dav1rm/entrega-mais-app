@@ -5,9 +5,9 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import Entypo from "react-native-vector-icons/Entypo";
 
 import StackHome from "./StackHome";
-import MyWallet from "./MyWalletScreen";
 import StackEntregas from "./StackEntregas";
-import Profile from "./ProfileScreen";
+import MeuPerfil from "./Perfil/MeuPerfil";
+import MeusPagamentos from "./Pagamentos/MeusPagamentos";
 
 const Tabs = createBottomTabNavigator(
   {
@@ -29,16 +29,16 @@ const Tabs = createBottomTabNavigator(
         )
       }
     },
-    MyWallet: {
-      screen: MyWallet,
+    MeusPagamentos: {
+      screen: MeusPagamentos,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Entypo name="wallet" size={25} color={tintColor} />
         )
       }
     },
-    Profile: {
-      screen: Profile,
+    MeuPerfil: {
+      screen: MeuPerfil,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <MaterialCommunityIcons name="account" size={25} color={tintColor} />

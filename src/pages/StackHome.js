@@ -3,7 +3,6 @@ import { createStackNavigator } from "react-navigation";
 import VisualizarEntrega from "./Home/VisualizarEntrega";
 import VisualizarPerfil from "./Home/VisualizarPerfil";
 import SolicitarEntrega from "./Home/SolicitarEntrega";
-import DetailDelivery from "./DetailDelivery";
 import EntregasDisponiveis from "./Home/EntregasDisponiveis";
 
 const StackHome = createStackNavigator(
@@ -19,9 +18,6 @@ const StackHome = createStackNavigator(
     },
     EntregasDisponiveis: {
       screen: EntregasDisponiveis
-    },
-    DetailDelivery: {
-      screen: DetailDelivery
     }
   },
   {

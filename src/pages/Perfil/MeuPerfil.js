@@ -13,7 +13,7 @@ class MeuPerfil extends Component {
   render() {
     return (
       <View>
-        <Text>Tela de Perfil</Text>
+        <Text>Tela de Meu Perfil</Text>
       </View>
     );
   }
