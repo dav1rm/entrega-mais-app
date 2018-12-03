@@ -7,6 +7,7 @@ class Button extends Component {
     const { style } = this.props;
     return (
       <TouchableOpacity
+        onPress={this.props.onPress}
         style={style == "line" ? styles.buttonLine : styles.button}
       >
         <Text
@@ -25,7 +26,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 15,
     height: 50,
-    marginVertical: 3
+    marginVertical: 3,
+    borderRadius: 2
   },
   textButton: {
     color: "#fff",
@@ -36,7 +38,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 15,
     height: 50,
-    marginVertical: 3
+    marginVertical: 3,
+    borderRadius: 2
   },
   textButtonLine: {
     color: "#00A4D4",

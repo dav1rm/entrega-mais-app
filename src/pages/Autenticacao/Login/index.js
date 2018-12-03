@@ -21,7 +21,11 @@ export default class Login extends Component {
         <Input placeholder="Email" />
         <Input type="password" placeholder="Senha" />
         <Button title="ENTRAR" />
-        <Button style="line" title="CRIAR CONTA" />
+        <Button
+          onPress={() => this.props.navigation.navigate("Register")}
+          style="line"
+          title="CRIAR CONTA"
+        />
       </Container>
     );
   }

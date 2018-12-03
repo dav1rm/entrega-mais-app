@@ -2,10 +2,7 @@ import { createStackNavigator } from "react-navigation";
 
 import Tabs from "./pages/Tabs";
 import Login from "./pages/Autenticacao/Login";
-import Acount from "./pages/AcountScreen";
-import ViewDelivery from "./pages/ViewDelivery";
-import ViewDeliveryman from "./pages/ViewDeliveryman";
-import TrackDelivery from "./pages/TrackDelivery";
+import Register from "./pages/Autenticacao/Register";
 
 const Routes = createStackNavigator(
   {
@@ -15,11 +12,8 @@ const Routes = createStackNavigator(
         header: null
       }
     },
-    Acount: {
-      screen: Acount,
-      navigationOptions: {
-        header: null
-      }
+    Register: {
+      screen: Register
     },
     Tabs: {
       screen: Tabs,

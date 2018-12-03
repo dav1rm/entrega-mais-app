@@ -16,11 +16,14 @@ class Input extends Component {
 
 const styles = StyleSheet.create({
   input: {
-    backgroundColor: "#fff",
+    backgroundColor: "#FAFAFA",
     height: 50,
     paddingHorizontal: 20,
     marginVertical: 5,
-    color: "#231F20"
+    color: "#231F20",
+    borderColor: "#DBDBDB",
+    borderWidth: 1,
+    borderRadius: 2
   }
 });
 export default Input;
