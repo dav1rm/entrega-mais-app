@@ -55,7 +55,10 @@ export default class Register extends Component {
               placeholder="Repetir Senha"
               ref={input => (this.repeatPasswordInput = input)}
             />
-            <Button title="SALVAR" />
+            <Button
+              title="SALVAR"
+              onPress={() => this.props.navigation.navigate("Tabs")}
+            />
             <CardItem />
           </Card>
         </Content>
