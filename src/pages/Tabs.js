@@ -6,7 +6,7 @@ import Entypo from "react-native-vector-icons/Entypo";
 
 import StackHome from "./StackHome";
 import StackEntregas from "./StackEntregas";
-import MeuPerfil from "./Perfil/MeuPerfil";
+import Perfil from "./Perfil/index";
 import MeusPagamentos from "./Pagamentos/MeusPagamentos";
 
 const Tabs = createBottomTabNavigator(
@@ -38,7 +38,7 @@ const Tabs = createBottomTabNavigator(
       }
     },
     MeuPerfil: {
-      screen: MeuPerfil,
+      screen: Perfil,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <MaterialCommunityIcons name="account" size={25} color={tintColor} />

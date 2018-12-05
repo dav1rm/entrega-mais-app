@@ -43,7 +43,7 @@ export default class VisualizarEntrega extends Component {
               <Text style={styles.fontTitle}>Vendedor</Text>
             </CardItem>
             <TouchableWithoutFeedback
-            //onPress={() => this.props.navigation.navigate("VisualizarPerfil")}
+              onPress={() => this.props.navigation.navigate("VisualizarPerfil")}
             >
               <CardItem>
                 <Thumbnail source={{ uri: params.item.vendedor.imagem }} />
@@ -124,7 +124,10 @@ export default class VisualizarEntrega extends Component {
               </View>
             </CardItem>
             <CardItem style={styles.buttonEntrega}>
-              <Button style={{ backgroundColor: "#F44336" }}>
+              <Button
+                onPress={() => this.props.navigation.navigate("Entregas")}
+                style={{ backgroundColor: "#F44336" }}
+              >
                 <Text>Aceitar Entrega</Text>
               </Button>
             </CardItem>

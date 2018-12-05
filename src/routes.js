@@ -23,7 +23,7 @@ const Routes = createStackNavigator(
     }
   },
   {
-    initialRouteName: "Tabs",
+    initialRouteName: "Login",
     navigationOptions: {
       headerStyle: {
         backgroundColor: "#0D3782"

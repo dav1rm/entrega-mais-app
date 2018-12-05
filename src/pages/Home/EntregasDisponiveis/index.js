@@ -17,6 +17,7 @@ import {
 } from "native-base";
 
 import styles from "./styles";
+import api from "../../../services/api";
 
 export default class EntregasDisponiveis extends Component {
   static navigationOptions = ({ navigation }) => ({
@@ -40,6 +41,8 @@ export default class EntregasDisponiveis extends Component {
         valor: "25.00",
         taxa: "15.30",
         vendedor: {
+          imagem:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmL1IusmMFVKhSBXSw4KlvfEJBTpR_QSuDr3-XqEDjI3R-Pzt",
           id: 5,
           name: "Augusto Luan Santos",
           telefone: "(84) 99810-1515",
@@ -73,6 +76,8 @@ export default class EntregasDisponiveis extends Component {
         valor: "35.00",
         taxa: "15.30",
         vendedor: {
+          imagem:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmL1IusmMFVKhSBXSw4KlvfEJBTpR_QSuDr3-XqEDjI3R-Pzt",
           id: 5,
           name: "Maria Rita de Oliveira",
           telefone: "(84) 99810-1515",
@@ -106,6 +111,8 @@ export default class EntregasDisponiveis extends Component {
         valor: "7.50",
         taxa: "15.30",
         vendedor: {
+          imagem:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmL1IusmMFVKhSBXSw4KlvfEJBTpR_QSuDr3-XqEDjI3R-Pzt",
           id: 5,
           name: "Lucilene de Araujo",
           telefone: "(84) 99810-1515",
@@ -139,6 +146,8 @@ export default class EntregasDisponiveis extends Component {
         valor: "20.00",
         taxa: "15.30",
         vendedor: {
+          imagem:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmL1IusmMFVKhSBXSw4KlvfEJBTpR_QSuDr3-XqEDjI3R-Pzt",
           id: 5,
           name: "Fábio Anthony Pedro Oliveira",
           telefone: "(84) 99810-1515",
@@ -172,6 +181,8 @@ export default class EntregasDisponiveis extends Component {
         valor: "20.00",
         taxa: "15.30",
         vendedor: {
+          imagem:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmL1IusmMFVKhSBXSw4KlvfEJBTpR_QSuDr3-XqEDjI3R-Pzt",
           id: 5,
           name: "Fábio Anthony Pedro Oliveira",
           telefone: "(84) 99810-1515",
@@ -205,6 +216,8 @@ export default class EntregasDisponiveis extends Component {
         valor: "20.00",
         taxa: "15.30",
         vendedor: {
+          imagem:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmL1IusmMFVKhSBXSw4KlvfEJBTpR_QSuDr3-XqEDjI3R-Pzt",
           id: 5,
           name: "Fábio Anthony Pedro Oliveira",
           telefone: "(84) 99810-1515",
@@ -235,6 +248,16 @@ export default class EntregasDisponiveis extends Component {
       }
     ]
   };
+
+  // componentDidMount() {
+  //   this.getEntregasDisponiveis();
+  // }
+
+  // getEntregasDisponiveis = async () => {
+  //   const response = await api.get("/entregas/disponiveis");
+  //   // const { entregas } = response.data;
+  //   this.setState({ entregas:response.data });
+  // };
 
   render() {
     return (

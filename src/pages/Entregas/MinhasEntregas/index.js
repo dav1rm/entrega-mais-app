@@ -17,6 +17,8 @@ import {
 
 import styles from "./styles";
 
+import api from "../../../services/api";
+
 export default class MinhasEntregas extends Component {
   static navigationOptions = {
     title: "Minhas Entregas"
@@ -350,6 +352,16 @@ export default class MinhasEntregas extends Component {
     ]
   };
 
+  // componentDidMount() {
+  //   this.getEntregasDisponiveis();
+  // }
+
+  // getEntregasDisponiveis = async () => {
+  //   const response = await api.get("/entregas");
+  //   console.log(response.data);
+  //   this.setState({ entregas: response.data });
+  // };
+
   render() {
     return (
       <Container>
@@ -368,7 +380,14 @@ export default class MinhasEntregas extends Component {
                   }
                 >
                   <Left>
-                    <Thumbnail source={{ uri: item.vendedor.imagem }} />
+                    <Thumbnail
+                      source={{
+                        uri:
+                          item.entregador == null
+                            ? "http://seuguiadeinvestimentos.com.br/wp-content/uploads/2014/03/Como-definir-o-seu-perfil-de-investimento-Seu-Guia-de-Investimentos.png"
+                            : item.entregador.imagem
+                      }}
+                    />
                   </Left>
                   <Body>
                     <View style={styles.titleItem}>
@@ -385,7 +404,9 @@ export default class MinhasEntregas extends Component {
                       </Text>
                     </View>
                     <Text numberOfLines={1} style={styles.fontSubtitle}>
-                      {item.vendedor.name}
+                      {item.entregador == null
+                        ? "Aguardando um entregador"
+                        : item.entregador.name}
                     </Text>
                     <Badge style={styles.tagItem}>
                       <Text style={styles.tagText}>
